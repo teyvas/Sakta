@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.Canvas?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.alatoo.sakta.MapController">
+    <Pane fx:id="mapPane" prefWidth="800" prefHeight="600">
+        <Canvas fx:id="mapCanvas" width="800" height="600"/>
+    </Pane>
+    <VBox layoutX="820" layoutY="20">
+        <Label text="Add User" />
+        <TextField fx:id="userNameField" promptText="User Name"/>
+        <TextField fx:id="userLatitudeField" promptText="Latitude"/>
+        <TextField fx:id="userLongitudeField" promptText="Longitude"/>
+        <Button text="Add User" onAction="#addUser"/>
+        <Button text="Request Help" onAction="#requestHelp"/>
+    </VBox>
+</AnchorPane>
