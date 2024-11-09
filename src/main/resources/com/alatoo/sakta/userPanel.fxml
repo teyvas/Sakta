@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alatoo.sakta.UserController">
+    <Button fx:id="shareLocationButton" text="Share Location" onAction="#onShareLocationPressed" />
+    <Button fx:id="logoutButton" text="Logout" onAction="#handleLogout" />
+</VBox>

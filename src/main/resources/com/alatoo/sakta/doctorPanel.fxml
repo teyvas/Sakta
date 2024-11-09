@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.WebView?>
+
+<?import javafx.scene.control.Button?>
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alatoo.sakta.DoctorController">
+    <WebView fx:id="mapWebView" />
+    <Button fx:id="logoutButton" text="Logout" onAction="#handleLogout" />
+</VBox>

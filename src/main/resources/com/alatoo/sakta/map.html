@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple OSM Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        var map;
+        var marker;
+
+        function initMap(lat, lon) {
+            // Initialize the map
+            map = L.map('map').setView([lat, lon], 13); // Default to coordinates (lat, lon)
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Add a marker at the user's location
+            marker = L.marker([lat, lon]).addTo(map);
+        }
+
+        // Call this function to update the marker position
+        function updateMap(lat, lon) {
+            marker.setLatLng([lat, lon]);
+            map.setView([lat, lon], 13);
+        }
+    </script>
+</head>
+<body onload="initMap(37.7749, -122.4194)">  <!-- Default coordinates for testing -->
+<div id="map" style="height: 600px; width: 100%;"></div>
+</body>
+</html>
