@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox spacing="20" alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alatoo.sakta.LoginController"
+      style="-fx-background-color: linear-gradient(to bottom, #e6f7ff, #f4f4f9); -fx-padding: 40; -fx-border-radius: 15; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 15, 0, 0, 5);">
+
+    <Label text="Welcome Back" style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #333; -fx-padding: 0 0 20 0;" />
+
+    <TextField fx:id="usernameField" promptText="Username"
+               style="-fx-pref-width: 280px; -fx-font-size: 15px; -fx-background-radius: 10; -fx-padding: 12; -fx-border-color: #b0c4de; -fx-border-radius: 10;" />
+
+    <PasswordField fx:id="passwordField" promptText="Password"
+                   style="-fx-pref-width: 280px; -fx-font-size: 15px; -fx-background-radius: 10; -fx-padding: 12; -fx-border-color: #b0c4de; -fx-border-radius: 10;" />
+
+    <Button fx:id="loginButton" text="Login" onAction="#handleLogin"
+            style="-fx-background-color: linear-gradient(to bottom, #36c1ff, #007bff); -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 20; -fx-padding: 10 30; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 2, 2);" />
+</VBox>
