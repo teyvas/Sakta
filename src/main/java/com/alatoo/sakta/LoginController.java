@@ -27,11 +27,18 @@ public class LoginController {
         String username = usernameField.getText();
         String password = passwordField.getText();
 
-        if ("user".equals(username) && "user123".equals(password)) {
-            mainApp.showUserView();
-        } else if ("doctor".equals(username) && "doctor123".equals(password)) {
-            mainApp.showDoctorView();
+// Validate username and password with MyJDBC
+        if (MyJDBC.validateUser(username, password)) {
+            // If validation is successful, show the appropriate view based on the username
+            if ("user".equalsIgnoreCase(username)) {
+                mainApp.showUserView();
+            } else if ("doctor".equalsIgnoreCase(username)) {
+                mainApp.showDoctorView();
+            } else {
+                showAlert("User Error", "Invalid username. Please enter 'user' or 'doctor'.");
+            }
         } else {
+            // Show an error if validation fails
             showAlert("Login Error", "Invalid username or password!");
         }
     }
