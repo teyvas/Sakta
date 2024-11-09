@@ -9,13 +9,20 @@ This JavaFX application allows **doctors** and **users** to interact with each o
 
 The app provides a simple, role-based interface for doctors and users to share location data, facilitating quick access to medical support.
 
+## Connect to database source: 
+-- host: sakta-do-user-18270856-0.i.db.ondigitalocean.com
+-- port: 25060
+-- username: doadmin
+-- Database: defaultdb
+-- password: AVNS_Ly595UDGmkZs5RVU6Sz
+
 ## **Features**
 
 - **Login Screen**:
   - Login as a **doctor** or **user**.
   - Basic authentication with hardcoded credentials:
-    - Username: `doctor`, Password: `doctor123` (for doctor login).
-    - Username: `user`, Password: `user123` (for user login).
+    - Username: `doctor`, Password: `321` (for doctor login).
+    - Username: `user`, Password: `123` (for user login).
   
 - **Doctor Panel**:
   - View a list of nearby users.
