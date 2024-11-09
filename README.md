@@ -1,3 +1,7 @@
+# **Doctor-Patient Location Sharing App**
+
+## **Overview**
+
 This JavaFX application allows **doctors** and **users** to interact with each other based on their proximity. The **doctor** can view nearby users, while **users** can share their locations with doctors. The app consists of three primary components:
 - **Login Screen**: Allows users to log in as either a **doctor** or **user**.
 - **Doctor Panel**: Enables the doctor to view nearby users.
